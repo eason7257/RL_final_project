@@ -4,68 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <!-- <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS"> -->
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <!-- <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI"> -->
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
-  <!-- Open Graph / Facebook -->
-  <!-- <meta property="og:type" content="article"> -->
-  <!-- TODO: Replace with your institution or lab name -->
-  <!-- <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME"> -->
-  <!-- TODO: Same as paper title above -->
-  <!-- <meta property="og:title" content="PAPER_TITLE"> -->
-  <!-- TODO: Same as description above -->
-  <!-- <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS"> -->
-  <!-- TODO: Replace with your actual website URL -->
-  <!-- <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"> -->
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <!-- <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2"> -->
-
-  <!-- Twitter -->
-  <!-- <meta name="twitter:card" content="summary_large_image"> -->
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <!-- <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE"> -->
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <!-- <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE"> -->
-  <!-- TODO: Same as paper title above -->
-  <!-- <meta name="twitter:title" content="PAPER_TITLE"> -->
-  <!-- TODO: Same as description above -->
-  <!-- <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS"> -->
-  <!-- TODO: Same as social preview image above -->
-  <!-- <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png"> -->
-  <!-- <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview"> -->
-
-  <!-- Academic/Research Specific -->
-  <!-- <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf"> -->
-  
-  <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   
-  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
@@ -73,24 +19,19 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
-  <!-- TODO: Replace with your paper title and authors -->
   <title>Image Difference Captioning via PPO</title>
   
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/NYCU.ico">
   <link rel="apple-touch-icon" href="static/images/NYCU.ico">
   
-  <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
   
-  <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   
-  <!-- Fallback for browsers that don't support preload -->
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="static/css/bulma-slider.min.css">
@@ -98,10 +39,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
   
-  <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -109,76 +48,18 @@
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
   
-  <!-- Structured Data for Academic Papers -->
-  <!-- <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
       }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script> -->
-  
-  <!-- Website/Organization Structured Data -->
-  <!-- <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
+    };
   </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
-<body> -->
+
+<body> 
 
 
   <!-- Scroll to Top Button -->
@@ -235,7 +116,7 @@
   </div> -->
 
 
-<main id="main-content">
+  <main id="main-content">
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -384,61 +265,232 @@
 </section> -->
 <!-- End teaser video -->
 
-<!-- Paper abstract -->
+
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Image Difference Captioning (IDC) is a vision-language task that requires generating natural-language descriptions of fine-grained differences between highly similar image pairs. Unlike conventional image captioning, IDC demands precise localization and faithful grounding of subtle changes while preserving shared context.
-          </p>
-          <p>
-            Recent approaches, such as Adversarial Direct Preference Optimization (ADPO), formulate IDC as a preference learning problem and leverage adversarially retrieved hard negatives to improve alignment. However, these methods rely on Direct Preference Optimization (DPO), which is sensitive to the quality of negative samples and lacks explicit trajectory-level optimisation. In this project, we reformulate IDC as a sequential decision-making problem and optimize caption generation using on-policy reinforcement learning.
-          </p>
-          <p>
-            Specifically, we investigate Proximal Policy Optimization (PPO) and Group Relative Policy Optimization (GRPO) to directly maximize sequence-level rewards that capture visual faithfulness and descriptive precision. Additionally, we incorporate a contrastive objective to enforce alignment between generated captions and visual differences in embedding space. We evaluate our approach on standard IDC benchmarks and compare against strong preference-based baselines.
-          </p>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              This project explores the complexities and challenges of applying Reinforcement Learning from Human Feedback (RLHF) to Vision-Language Models (VLMs) for fine-grained visual reasoning tasks. Specifically, we focus on the <strong>"Spot-the-Diff"</strong> task, which requires the model to accurately describe localized visual changes between a "Before" and "After" image.
+            </p>
+            <p>
+              Throughout the development pipeline—from Supervised Fine-Tuning (SFT) to Proximal Policy Optimization (PPO)—we successfully deployed a full RLHF training loop in a memory-constrained environment. More importantly, we conducted a deep dive into the failure modes of standard RLHF. We empirically observed and analyzed classic AI safety phenomena: <strong>Repetition Degeneration, Reward Hacking, and Mode Collapse</strong>.
+            </p>
+            <p>
+              We discovered that while PPO successfully cured the model's autoregressive hallucination, it learned to exploit the CLIP-based reward model by outputting "safe, generic statements" to maximize semantic similarity while avoiding length penalties. This resulted in a steep <strong>Alignment Tax</strong>, as evidenced by a catastrophic drop in TF-IDF-based metrics (CIDEr). To mitigate this, we propose and formulate a novel <strong>Absolute Difference Contrastive Reward</strong> mechanism designed specifically for visual-delta tasks.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Experimental Setup</h2>
+          <div class="content has-text-justified">
+            <ul>
+              <li><strong>Base Model:</strong> Qwen/Qwen2.5-VL-3B-Instruct</li>
+              <li><strong>Task & Dataset:</strong> Spot-the-Diff (Generating factual captions describing the visual delta between two concatenated images).</li>
+              <li><strong>Hardware Infrastructure:</strong> Single NVIDIA RTX A5000 (24GB VRAM).</li>
+              <li><strong>Training Pipeline:</strong>
+                <ul>
+                  <li><strong>Phase 1 (SFT):</strong> 4-bit Quantized Low-Rank Adaptation (QLoRA) to teach the model the base formatting and task structure.</li>
+                  <li><strong>Phase 2 (RLHF):</strong> Proximal Policy Optimization (PPO) trained for 1,000 steps to align model outputs with human-like conciseness and accuracy.</li>
+                </ul>
+              </li>
+              <li><strong>Reward Model:</strong> openai/clip-vit-base-patch32 (Utilizing Cosine Similarity to evaluate the alignment between the generated text and the concatenated image).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Key Findings & Qualitative Analysis</h2>
+          
+          <div class="content has-text-justified">
+            <h3 class="title is-4">Phase 1: The SFT Baseline and Repetition Degeneration</h3>
+            <p>
+              Following the initial Supervised Fine-Tuning (SFT), the model demonstrated a basic understanding of the task but suffered from severe <strong>Repetition Degeneration</strong> during inference. The autoregressive decoding process would frequently get trapped in an infinite loop of identical n-grams, completely failing to produce a concise summary.
+            </p>
+            <blockquote style="border-left: 4px solid #f16c87; background-color: #feecf0;">
+              <strong>🔴 SFT Model Failure Case (Image ID: 256.png):</strong><br>
+              "the man in red shirt is no longer there. the person in blue shirt is no longer there. the person in white shirt is no longer there. the person in black shirt is no longer there. the person in red shirt is no longer there…" (Infinite Loop)
+            </blockquote>
+
+            <h3 class="title is-4 mt-5">Phase 2: PPO Intervention and Reward Hacking</h3>
+            <p>
+              To cure the repetition and encourage concise, factual reporting, we applied PPO using a CLIP-based reward model, supplemented with penalties for excessive length and word repetition.
+            </p>
+            <p>
+              While the PPO training successfully eliminated the infinite loops and produced highly fluent sentences, it led to an unexpected manifestation of <strong>Mode Collapse (Reward Hacking)</strong>. The model discovered a "loophole" in the reward function: because CLIP evaluates global semantic similarity, it fails to heavily penalize generic statements as long as they somewhat match the visual context (e.g., recognizing that "people" exist in the image).
+            </p>
+            <p>
+              To maximize its reward while strictly avoiding length penalties, the model abandoned high-risk, fine-grained details (such as spatial locations or specific colors) and collapsed into outputting a universal "safe phrase" for almost all images containing humans.
+            </p>
+            <blockquote style="border-left: 4px solid #3273dc; background-color: #eef3fc;">
+              <strong>Ground Truth (Image ID: 13824):</strong><br>
+              "there are more people in the before image"<br><br>
+              <strong>PPO Model's Exploitative Output:</strong><br>
+              "the people in the group have moved" <br>
+              <em>(A generic phrase used repeatedly regardless of the actual visual delta).</em>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Quantitative Results & The Alignment Tax</h2>
+          <div class="content has-text-justified">
+            <p>
+              The qualitative observation of Mode Collapse was perfectly mirrored in our quantitative NLP evaluation metrics. We compared the performance of the Baseline, the QLoRA (SFT) model, and the PPO model.
+            </p>
+            
+            <div class="table-container">
+              <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <thead>
+                  <tr>
+                    <th>Metric</th>
+                    <th>CLIP4IDC Baseline</th>
+                    <th>Qwen2.5-VL QLoRA (SFT)</th>
+                    <th>Qwen2.5-VL PPO</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>BLEU-4</strong></td>
+                    <td>0.1160</td>
+                    <td>0.0981</td>
+                    <td>0.0947</td>
+                  </tr>
+                  <tr>
+                    <td><strong>METEOR</strong></td>
+                    <td>0.1420</td>
+                    <td>0.1295</td>
+                    <td><strong>0.1307 (Slight Increase)</strong></td>
+                  </tr>
+                  <tr>
+                    <td><strong>ROUGE-L</strong></td>
+                    <td>0.3503</td>
+                    <td>0.3359</td>
+                    <td>0.3286</td>
+                  </tr>
+                  <tr>
+                    <td><strong>CIDEr</strong></td>
+                    <td>0.4735</td>
+                    <td>0.4806</td>
+                    <td><strong>0.3995 (Severe Drop)</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 class="title is-5 mt-4">Decoding the Metrics:</h4>
+            <p>The divergent behavior of these metrics provides empirical proof of the <strong>Alignment Tax</strong> caused by Reward Hacking:</p>
+            <ul>
+              <li><strong>The CIDEr Collapse:</strong> CIDEr relies heavily on TF-IDF weighting, penalizing common, generic phrases while highly rewarding rare, specific n-grams (e.g., "red truck", "left side"). Because the PPO model collapsed into using generic phrases like "the people have moved", its CIDEr score plummeted from 0.48 to 0.39.</li>
+              <li><strong>The METEOR Illusion (A Dangerous Metric Loophole):</strong> Unlike BLEU or CIDEr, METEOR incorporates WordNet, allowing for synonym matching and stemming. While the METEOR score appears stable or slightly improved, this is actually a classic metric loophole and a manifestation of Goodhart's Law. The model's use of broad, generic verbs like "moved" or "gone" successfully triggered false-positive synonym matches with specific action verbs in the Ground Truth. Rather than proving the model's capability, METEOR's "resilience" here actively masked the severe Mode Collapse, highlighting the danger of relying on semantic-smoothing metrics for fine-grained visual delta tasks.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Proposed Solution: The Contrastive CLIP Reward</h2>
+          <div class="content has-text-justified">
+            <p>
+              A standard CLIP similarity score is insufficient for difference-captioning because it cannot handle negative constraints (e.g., CLIP will output a high score for the phrase "the red car is gone" if a red car is present in the "Before" image).
+            </p>
+            <p>
+              To force the model to focus strictly on the delta and eliminate the generic "safe phrase" exploit, we propose a novel <strong>Absolute Difference Contrastive Reward</strong>.
+            </p>
+            <p>
+              Instead of evaluating the concatenated image as a whole, the reward dynamically evaluates the generated caption ($C$) against the Before image ($I_{before}$) and the After image ($I_{after}$) independently:
+            </p>
+            
+            <div class="box has-text-centered">
+              <p class="is-size-4">
+                $$ R_{contrastive} = |CLIP(C, I_{after}) - CLIP(C, I_{before})| \times Scale - Penalties $$
+              </p>
+            </div>
+
+            <p>
+              <strong>Theoretical Intuition:</strong> If the model attempts to cheat by outputting a generic phrase like "the people have moved", the CLIP score for both the Before and After images will be nearly identical (since both contain people). The absolute difference will approach zero, yielding no reward. To maximize this reward, the model is mathematically forced to generate details that are highly applicable to one image, but highly inapplicable to the other—effectively isolating the true visual delta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Limitations & Future Work</h2>
+          <div class="content has-text-justified">
+            <p>
+              While the Contrastive Reward mathematically solves the Mode Collapse, implementing it effectively doubles the required forward passes through the CLIP model during the PPO rollout phase. In our hardware environment (single RTX A5000 24GB), the combined memory overhead of the VLM, the CLIP model, and the PPO Value (Critic) model resulted in Out-of-Memory (OOM) errors during gradient updates.
+            </p>
+            <p>
+              For future work, we plan to transition the alignment pipeline from PPO to <strong>GRPO (Group Relative Policy Optimization)</strong>. GRPO eliminates the need for a separate Critic model by utilizing relative ranking among multiple generated outputs for the same prompt. This will significantly reduce the VRAM footprint, allowing for the successful integration of our Contrastive Reward mechanism on consumer-grade hardware.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
+       <div class="item"> -->
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
+        <!-- <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/> -->
         <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
+        <!-- <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
-      <div class="item">
+      <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
+        <!-- <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
-      <div class="item">
+      <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
+        <!-- <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
-     <div class="item">
+     <div class="item"> -->
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
+      <!-- <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
       </h2>
@@ -446,7 +498,7 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
