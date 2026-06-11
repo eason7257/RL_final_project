@@ -282,6 +282,11 @@
               We discovered that while PPO successfully cured the model's autoregressive hallucination, it learned to exploit the CLIP-based reward model by outputting "safe, generic statements" to maximize semantic similarity while avoiding length penalties. This resulted in a steep <strong>Alignment Tax</strong>, as evidenced by a catastrophic drop in TF-IDF-based metrics (CIDEr). To mitigate this, we propose and formulate a novel <strong>Absolute Difference Contrastive Reward</strong> mechanism designed specifically for visual-delta tasks.
             </p>
           </div>
+
+          <div class="has-text-centered mt-5">
+            <img src="static/images/1.jpeg" alt="Project Overview" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          </div>
+          
         </div>
       </div>
     </div>
@@ -310,7 +315,6 @@
       </div>
     </div>
   </section>
-
   <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
@@ -326,7 +330,10 @@
               <strong>🔴 SFT Model Failure Case (Image ID: 256.png):</strong><br>
               "the man in red shirt is no longer there. the person in blue shirt is no longer there. the person in white shirt is no longer there. the person in black shirt is no longer there. the person in red shirt is no longer there…" (Infinite Loop)
             </blockquote>
-
+            
+            <div class="has-text-centered mt-4 mb-6">
+              <img src="static/images/2.jpeg" alt="Phase 1 SFT Failure Case" style="max-width: 80%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            </div>
             <h3 class="title is-4 mt-5">Phase 2: PPO Intervention and Reward Hacking</h3>
             <p>
               To cure the repetition and encourage concise, factual reporting, we applied PPO using a CLIP-based reward model, supplemented with penalties for excessive length and word repetition.
@@ -344,7 +351,11 @@
               "the people in the group have moved" <br>
               <em>(A generic phrase used repeatedly regardless of the actual visual delta).</em>
             </blockquote>
-          </div>
+
+            <div class="has-text-centered mt-4 mb-4">
+              <img src="static/images/3.jpeg" alt="Phase 2 PPO Reward Hacking Case" style="max-width: 80%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            </div>
+            </div>
         </div>
       </div>
     </div>
@@ -431,6 +442,10 @@
               <p class="is-size-4">
                 $$ R_{contrastive} = |CLIP(C, I_{after}) - CLIP(C, I_{before})| \times Scale - Penalties $$
               </p>
+            </div>
+
+            <div class="has-text-centered mt-5 mb-5">
+              <img src="static/images/4.jpeg" alt="Contrastive Reward Mechanism" style="max-width: 80%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
             </div>
 
             <p>
